@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  background-color: #f9f9f9;
+}
+.nav-links a {
+  color: gray;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero-section {
+  position: relative;
+  height: 606px;
+  width: 100%;
+}
+.hero-section img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero-section .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.hero-section .hero-text h1 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 79px;
+  font-weight: 700;
+  margin: 0;
+}
+.hero-section .hero-text p {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  margin: 10px 0 0;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.left-section {
+  width: 20%;
+  text-align: left;
+}
+.left-section .small-header {
+  font-size: 17px;
+  font-weight: 400;
+  color: gray;
+}
+.left-section .large-header {
+  font-size: 28px;
+  font-weight: 400;
+  color: black;
+}
+.left-section .description {
+  font-size: 23px;
+  font-weight: 400;
+  color: gray;
+}
+
+.right-section {
+  width: 75%;
+}
+.right-section .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.right-section .card {
+  width: 286px;
+}
+.right-section .card img {
+  width: 100%;
+  height: 195px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.right-section .card h3 {
+  color: black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+.right-section .card p {
+  color: gray;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .left-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .right-section {
+    width: 100%;
+  }
+  .right-section .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .right-section .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 35px;
+  }
+  .hero-text p {
+    font-size: 12px;
+  }
+  .left-section {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .right-section .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
